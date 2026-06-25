@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --muted-foreground: 0 0% 45%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: sans-serif;
+}
+
+.bg-background { background-color: hsl(var(--background)); }
+.text-foreground { color: hsl(var(--foreground)); }
+.text-muted-foreground { color: hsl(var(--muted-foreground)); }
